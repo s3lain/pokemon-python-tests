@@ -1,3 +1,4 @@
+# Databricks notebook source
 import requests
 import json
 import datetime
@@ -14,12 +15,5 @@ path = f"/Volumes/raw/pokemon/pokemon_raw/pokemons_list/{now}.json"
 
 
 # len(data_save)
-with open(path, "w") as open_file:
+with open(path, "w") as open_file:    
     json.dump(data_save, open_file)
-
-
-
-
-
-
-
